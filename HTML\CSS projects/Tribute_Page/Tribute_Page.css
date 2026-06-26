@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    background-color: rgb(59, 86, 183);
+    color: white;
+    text-align: center;
+    margin: 0;  
+}
+
+#bio,#ach{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#footer{
+    background-color: rgb(59, 86, 183);
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
