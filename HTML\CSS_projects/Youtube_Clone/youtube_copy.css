@@ -1,0 +1,326 @@
+                                                            /* Header css */
+
+.header {
+    background-color: white;
+    height: 110px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+    border-bottom: solid 2px rgb(234, 234, 234);
+}
+
+.header_top {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header_left {
+    width: 160px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menusvg {
+    width: 25px;
+    margin-left: 25px;
+}
+
+.youtubesvg {
+    width: 90px;
+    margin-left: 20px;
+}
+
+.youtubesvg:hover {
+    cursor: pointer;
+}
+
+.header_middle {
+    max-width: 900px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search_bar {
+    font-size: 15px;
+    height: 40px;
+    max-width: 600px;
+    border-radius: 3px;
+    border: none;
+    border-color: rgb(227, 227, 227);
+    flex: 1;
+    margin-left: 100px;
+    box-shadow: inset 0px 0px 3px rgb(205, 205, 205);
+    width: 0px;
+    padding-left: 10px;
+}
+
+
+.search_button {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    border: none;
+    border-width: 0px;
+    width: 40px;
+    border-radius: 3px;
+    border-color: rgb(215, 215, 215);
+    box-shadow: inset 0px 0px 3px rgb(153, 153, 153);
+    margin-left: -3px;
+}
+
+#highlight:hover {
+    background-color: lightgray;
+    transition: 0.2s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toolbox {
+    position: absolute;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    opacity: 0%;
+    bottom: -20px;
+}
+
+.search_button:hover {
+    cursor: pointer;
+}
+
+.hover:hover .toolbox {
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.voice_button {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    margin-right: 80px;
+    margin-left: 20px;
+} 
+
+.voice_button:hover {
+    cursor: pointer;
+}
+
+.voicesvg {
+    margin-top: 5px;
+}
+
+.header_right {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.upload_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.uploadsvg {
+    margin-top: 5px;
+}
+
+.app_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.appsvg {
+    margin-top: 5px;
+}
+
+.notification_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.notificationsvg {
+    margin-top: 5px;
+}
+
+.profilesvg {
+    width: 33px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.profilesvg:hover {
+    cursor: pointer;
+}
+
+.header_bottom {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+.tags {
+    font-size: 15px;
+    background-color: rgb(245, 245, 245);
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+
+#selected {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+                                                    /* content css */
+
+.videos {
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 20px;
+    padding: 20px;
+    padding-top: 120px;
+    padding-left: 90px;
+}
+
+.video {
+    padding: 15px;
+    color: black;
+}
+
+.video:hover {
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.vid_thumb {
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 0px;
+    border-radius: 15px;
+}
+
+.vid_time {
+    font-size: 13px;
+    padding: 5px;
+    color: transparent;
+    background-color: black;
+    opacity: 70%;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    padding-left: 8px;
+}
+
+.time {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    position: absolute;
+}
+
+.video_details {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 8px;
+}
+
+.channelimg {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.video_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.vidtitle {
+    font-weight: bold;
+}
+
+.channelname {
+    margin-top: 3px;
+    color: rgb(68, 68, 68);
+}
+
+.channelviews {
+    margin-top: 3px;
+    color: rgb(68, 68, 68);
+}
+
+
+                                                            /* sidebar */
+
+.sidebar {
+    background-color: white;
+    top: 70px;
+    bottom: 0px;
+    width: 80px;
+    position: fixed;
+    z-index: 2;
+}
+
+.side_button {
+    height: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+
+.side_button img {
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.side_button:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
